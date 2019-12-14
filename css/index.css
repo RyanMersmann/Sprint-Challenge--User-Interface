@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -65,18 +65,45 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
+/* standard css above - do not add */
 
-.container {
+/* Header Start */
+header nav {
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    font-weight: bold;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    margin-top: 2%;
+}
+
+header .long-exp-highway, .city-skyline {
+    display: block;
+    margin: auto;
+    width: 83%;
+    padding: 2% 0;
+}
+/* Header End */
+.container-home-page div, .container-about-page div, .container-contact-page div {
     width: 800px;
     margin: 0 auto;
 }
 
+/* Top Content Start */
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-weight: bold;
 }
 
 .top-content .text-container {
@@ -84,38 +111,83 @@ p {
     padding: 0 1%;
     padding-bottom: 20px;  
 }
+/* Top Content End */
 
+/* Middle Content Start */
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    font-weight: bold;
 }
 
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    width: 83%;
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes div {
     width: 12.5%;
-    height: 100px;
-    background: black;
+    height: 150px;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid red;
 }
+/* Middle Content End */
 
+/* Boxes Styling Start */
+.box1{
+    background: teal;
+}
+.box2{
+    background: gold;
+}
+.box3{
+    background: cadetblue;
+}
+.box4{
+    background: coral;
+}
+.box5{
+    background: crimson;
+}
+.box6{
+    background: forestgreen;
+}
+.box7{
+    background: darkorchid;
+}
+.box8{
+    background: hotpink;
+}
+.box9{
+    background: indigo;
+}
+.box10{
+    background: dodgerblue;
+}
+/* Boxes Styling Emd */
+
+/* Bottom Content Start */
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+    /* justify-content: center; */
+    margin-left: 12%;
+    margin-right: 12%;
+    font-weight: bold;
 }
 
 .bottom-content .text-container {
@@ -125,10 +197,13 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+/* Bottom Content End */
 
+/* Footer Start */
 footer {
-    width: 100%;
+    width: 80%;
     background: black;
+    margin-left: 12%;
 }
 
 footer nav {
@@ -138,9 +213,97 @@ footer nav {
     align-items: center;
     padding: 20px 2%;
     font-size: 14px;
+    font-weight: bold;
+    
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+/* Footer End */
+
+/* About CSS Styling */
+
+.about {
+    display:flex;
+    margin-left: 12%;
+    margin-right: 12%;
+    font-weight: bold;
+}
+
+hr {
+    border-bottom: 1px dashed black;
+    margin-left: 12%;
+    margin-right: 12%
+}
+
+/* Section 1 */
+.strategy-how-we-work {
+    display: flex;
+    margin-left: 12%;
+    margin-right: 12%;
+    font-weight: bold;
+}
+/* Section 2 */
+.places-collab {
+    display: flex;
+    margin-left: 12%;
+    margin-right: 12%;
+    font-weight: bold;
+}
+/* Section 1 */
+.strategy {
+    padding: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+.how-we-work {
+    padding: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+/* Section 2 */
+.places {
+    padding: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.collab {
+    padding: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+/* Button */
+.learnButton {
+    display: inline;
+    border: 2px solid black;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 16px;
+}
+/* Section 3  */
+.bottom {
+    margin-left: 12%;
+    margin-right: 12%;
+    padding-bottom: 2%;
+    font-weight: bold;
+}
+
+/* Contact Page CSS */
+
+.form-section {
+    display: flex;
+    margin-left: 12%;
+    margin-right: 12%;
+    justify-content: space-evenly;
+}
+
+.contact-header {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
 }
